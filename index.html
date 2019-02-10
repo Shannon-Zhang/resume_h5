@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>我的简历</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script>
+        // 计算当前屏幕html 的font-size大小
+        function computedREM() {
+            let winW = document.documentElement.clientWidth || document.body.clientWidth,
+                desW = 640;
+                document.documentElement.style.fontSize = winW/desW * 100 + 'px';
+        }
+        computedREM();
+        window.onresize = computedREM;
+
+    </script>
+</head>
+<body>
+    <!-- 音乐播放器 -->
+    <div class="music">
+        <audio loop src="./img/background_music.mp3" autoplay preload></audio>
+    </div>
+    <main>
+        <div class="wrapper">
+            <!-- Page1 -->
+            <section class="page1 hidden">
+                <!-- 周边藤条 -->
+                <div class="top_pic">
+                    <img src="./img/page1_rightTop.webp" alt="">
+                </div>
+                <div class="right_top_pic">
+                    <img src="./img/page1_rightTop_pic.webp" alt="">
+                </div>
+                <div class="left_bottom_pic">
+                    <img src="./img/page1_leftBottom_pic.webp" alt="">
+                </div>
+                <div class="bottom_pic">
+                    <img src="./img/page1_bottom_pic.webp" alt="">
+                </div>                
+                <!-- 主屏内容 -->
+                <!-- 头像 -->
+                <div class="main_pic">
+                    <img src="./img/page1_selfImage_pic.webp" alt="">
+                </div>
+                <!-- 我的简历 文字 -->
+                <div class="themeBox">
+                    <span><img src="./img/page1_resume_01.webp" alt=""></span>
+                    <span><img src="./img/page1_resume_02.webp" alt=""></span>
+                    <span><img src="./img/page1_resume_03.webp" alt=""></span>
+                    <span><img src="./img/page1_resume_04.webp" alt=""></span>
+                </div>
+                <!-- 藤条 -->
+                <div class="vineBranch">
+                    <img src="./img/page1_middle_pic.webp" alt="">
+                </div>
+                <!-- 文字 -->
+                <p class="show">我，期待一个自我展示的舞台</p>
+            </section>
+            <!-- Page2 -->
+            <section class="page2 hidden">
+                <!-- 周边藤条 -->
+                <div class="right_top_pic">
+                    <img src="./img/page1_rightTop_pic.webp" alt="">
+                </div>
+                <div class="left_bottom_pic">
+                    <img src="./img/page1_leftBottom_pic.webp" alt="">
+                </div>
+                <div class="bottom_pic">
+                    <img src="./img/page1_bottom_pic.webp" alt="">
+                </div>
+                <!-- 主屏内容 -->
+                <!-- 标题 -->
+                <div class="title">
+                    <img src="./img/page2_top_0.webp" alt="">
+                    <h2>基本信息</h2>
+                </div>
+                <!-- 信息列表 -->
+                <div class="info">
+                    <!-- 头像 -->
+                    <div class="image_frame">
+                        <img src="./img/page2_pic_frame.webp" alt="">
+                    </div>
+                    <div class="image">
+                        <img src="./img/page2_pic.webp" alt="">
+                    </div>
+                    <!-- 信息列表 -->
+                    <div class="basicInfo">
+                        <dl>
+                            <dt>姓名：</dt>
+                            <dd>白雪</dd>
+                            <dt>出生年月：</dt>
+                            <dd>1990.11.07</dd>
+                            <dt>毕业院校：</dt>
+                            <dd>珠峰培训</dd>
+                            <dt>专业技能：</dt>
+                            <dd>前端开发</dd>
+                            <dt>联系方式：</dt>
+                            <dd>13716290658</dd>
+                        </dl>
+                    </div>
+                </div>
+                <!-- 自我评价 -->
+                <div class="self_evaluation">
+                    <span>自我评价</span>
+                    <p>1·性格开朗、为人诚恳、乐观 向上、拥有较强的组织 能力和适应能力。 </p>
+                    <p>2·忠实诚信,讲原则，说到做到， 决不推卸责任。</p>
+                    <p>3·做事情始终坚持有始有终，不半途 而废;肯学习,自信但不以自我为中心工作积极进取。</p>
+                </div>
+            </section>
+            <!-- Page3 -->
+            <section class="page3 hidden">
+                <!-- 周边藤条 -->
+                <div class="right_top_pic">
+                    <img src="./img/page1_rightTop_pic.webp" alt="">
+                </div>
+                <div class="left_bottom_pic">
+                    <img src="./img/page1_leftBottom_pic.webp" alt="">
+                </div>
+                <div class="bottom_pic">
+                    <img src="./img/page1_bottom_pic.webp" alt="">
+                </div>
+                <!-- 主屏内容 -->
+                <!-- 标题 -->
+                <div class="title">
+                    <img src="./img/page2_top_0.webp" alt="">
+                    <h2>技能详解</h2>
+                </div>
+                <!-- 技能球 -->
+                <div class="skill_list clearfix">
+                    <div class="skill_ball">
+                        <span>PS</span>
+                    </div>
+                    <div class="skill_ball">
+                        <span>AI</span>
+                    </div>
+                    <div class="skill_ball">
+                        <span>CDR</span>
+                    </div>
+                    <div class="skill_ball">
+                        <span>AE</span>
+                    </div>
+                    <div class="roll_ball"></div>
+                    <div class="roll_ball"></div>
+                    <div class="roll_ball"></div>
+                    <div class="roll_ball"></div>
+                </div>
+                <!-- 技能详解 -->
+                <div class="skill_details">
+                    <span>技能详解</span>
+                    <p>能够熟练应用考勤软件及Word、Excel办公自动化软件，能够独立开展工作。在学习理论知识的同时，积累了实际的经验，工作上能以身作则，有高度的责任感和敬业精神，亦有很强的数字观念和统筹能力，精于工作分析，总结与改善，具有整体作业的团队精神，适应能力强。</p>
+                </div>
+            </section>
+            <!-- Page4 -->
+            <section class="page4 hidden">
+                <!-- 周边藤条 -->
+                <div class="right_top_pic">
+                    <img src="./img/page1_rightTop_pic.webp" alt="">
+                </div>
+                <div class="left_bottom_pic">
+                    <img src="./img/page1_leftBottom_pic.webp" alt="">
+                </div>
+                <div class="bottom_pic">
+                    <img src="./img/page1_bottom_pic.webp" alt="">
+                </div>
+                <!-- 主屏内容 -->
+                <!-- 标题 -->
+                <div class="title">
+                    <img src="./img/page2_top_0.webp" alt="">
+                    <h2>工作经历</h2>
+                </div>
+                <!-- 工作经历详情 -->
+                <ul>
+                    <li>
+                        <img src="./img/page2_top_0.webp" alt="">
+                        <div class="job_details">
+                            <div class="time_location">
+                                <h3>2015.02-2016.02</h3>
+                                <h3>北京一起科技有限公司   设计师</h3>
+                            </div>
+                            <p>熟练使用各种平面设计软件及网页制作软件，有美术基本功底、审美品位</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./img/page2_top_0.webp" alt="">
+                        <div class="job_details">
+                            <div class="time_location">
+                                <h3>2015.02-2016.02</h3>
+                                <h3>北京一起科技有限公司   设计师</h3>
+                            </div>
+                            <p>负责公司产品策划设计制作、公司展览会议等场地的布置；企业宣传资料的设计、制作与创新。</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./img/page2_top_0.webp" alt="">
+                        <div  class="job_details">
+                            <div class="time_location">
+                                <h3>2015.02-2016.02</h3>
+                                <h3>北京一起科技有限公司   设计师</h3>
+                            </div>
+                            <p>根据公司和客户的要求，协助其他部门人员对设计及美学方面的工作顺利完成</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <!-- Page5 -->
+            <section class="page5 hidden">
+                <!-- 周边藤条 -->
+                <div class="right_top_pic">
+                    <img src="./img/page1_rightTop_pic.webp" alt="">
+                </div>
+                <div class="left_bottom_pic">
+                    <img src="./img/page1_leftBottom_pic.webp" alt="">
+                </div>
+                <div class="bottom_pic">
+                    <img src="./img/page1_bottom_pic.webp" alt="">
+                </div>
+                <!-- 主屏内容 -->
+                <!-- 标题 -->
+                <div class="title">
+                    <img src="./img/page2_top_0.webp" alt="">
+                    <h2>兴趣爱好</h2>
+                </div>
+                <!-- 兴趣爱好 -->
+                <!-- 读书 -->
+                <div class="frame">
+                    <img class="frame_img" src="./img/page1_middle_pic.webp" alt="">
+                    <div class="banner fl">
+                        <img src="./img/page4_pic1.webp" alt="">
+                    </div>
+                    <div class="desc fl">
+                        <h3 class="hobby_title">读书</h3>
+                        <p class="hobby_detail">读万卷书，行万里路</p>
+                    </div>
+                </div>
+                <div class="frame">
+                    <img class="frame_img" src="./img/page1_middle_pic.webp" alt="">
+                    <div class="banner fl">
+                        <img src="./img/page4_pic2.webp" alt="">
+                    </div>
+                    <div class="desc fl">
+                        <h3 class="hobby_title">其他</h3>
+                        <p class="hobby_detail">跑步、看电影、听音乐</p>
+                    </div>
+                </div>                    
+            </section>
+            <section class="page6 hidden">
+                <!-- 周边藤条 -->
+                <div class="right_top_pic">
+                    <img src="./img/page1_rightTop_pic.webp" alt="">
+                </div>
+                <div class="left_bottom_pic">
+                    <img src="./img/page1_leftBottom_pic.webp" alt="">
+                </div>
+                <div class="bottom_pic">
+                    <img src="./img/page1_bottom_pic.webp" alt="">
+                </div>
+                <!-- 主屏内容 -->
+                <!-- 标题 -->
+                <div class="title">
+                    <img src="./img/page2_top_0.webp" alt="">
+                    <h2>项目经验</h2>
+                </div>
+                <!-- 项目经验详情 -->
+                <div class="pic1">
+                    <img src="./img/page5_pic1.webp" alt="">
+                </div>
+                <div class="detail">
+                    <h2>法拉利概念车F80</h2>
+                    <p>准确把握影视产品市场定位，在题材规划上将紧跟市场动态进行拓展，国内与海外并举的完整产业发展道路。</p>
+                </div>
+                <div class="pic2">
+                    <img src="./img/page5_pic2.webp" alt="">
+                </div>
+                <div class="pic3">
+                    <img src="./img/page5_pic3.webp" alt="">
+                </div>
+            </section>
+            <section class="page7 hidden">
+                <!-- 周边藤条 -->
+                <div class="right_top_pic">
+                    <img src="./img/page1_rightTop_pic.webp" alt="">
+                </div>
+                <div class="left_bottom_pic">
+                    <img src="./img/page1_leftBottom_pic.webp" alt="">
+                </div>
+                <div class="bottom_pic">
+                    <img src="./img/page1_bottom_pic.webp" alt="">
+                </div>
+                <!-- 主屏内容 -->
+                <!-- 标题 -->
+                <div class="title">
+                    <img src="./img/page2_top_0.webp" alt="">
+                    <h2>招聘意向</h2>
+                </div>
+                <!-- 雇主信息 -->
+                <div class="boss_info">
+                    <div class="boss_info_detail">
+                        <input type="text" placeholder="姓名">
+                    </div>
+                    <div class="boss_info_detail">
+                        <input type="text" placeholder="电话">
+                    </div>
+                    <div class="boss_info_detail">
+                        <input type="text" placeholder="企业">
+                    </div>
+                    <div class="boss_info_detail btn">
+                        <button>提交</button>
+                    </div>
+                </div>
+                <!-- 个人联系信息 -->
+                <div class="wechat">
+                    <img src="./img/wechatCard.png" alt="">
+                </div>
+                <div class="contact">
+                    <p>城市：中国·北京</p>
+                    <p>微信：13716290658</p>
+                    <p>个人网站：</p>
+                </div>
+            </section>
+            <section class="page8 hidden">
+                <!-- 周边藤条 -->
+                <!-- <div class="right_top_pic">
+                    <img src="./img/page1_rightTop_pic.webp" alt="">
+                </div>
+                <div class="left_bottom_pic">
+                    <img src="./img/page1_leftBottom_pic.webp" alt="">
+                </div>
+                <div class="bottom_pic">
+                    <img src="./img/page1_bottom_pic.webp" alt="">
+                </div> -->
+                <!-- 主屏内容 -->
+                <div class="theme"></div>
+                <div class="main_pic">
+                    <img src="./img/page8.webp" alt="">
+                </div>
+                <p class="desc">小清新简约-个人简历</p>
+            </section>
+        </div>
+    </main>
+    <!-- 上滑按钮 -->
+    <div class="arrow">
+        <div class="pre_box1">
+            <div class="pre1"></div>
+        </div>
+        <div class="pre_box2">
+            <div class="pre2"></div>
+        </div>
+    </div>
+    <div class="bar">
+        <div class="progressBar"></div>
+        <em class="page_tip">1/8</em>
+    </div>
+</body>
+</html>
+<script src="./js/zepto.min.js"></script>
+<script src="./js/index.js"></script>
+<script>
+/* 
+    思路
+    一、HTML结构
+        水平滚动条，说明：
+            1.main的宽高为可视窗口大小,overflow:hidden
+            2.所有page是横向展示的，可以用section标签，所有section宽度和main相同，float:left
+        page1:首页
+            藤蔓都position:absolute?——所有页面复用
+            img->resume 文字div->藤条 div->文字p 从上到下 块元素依次position:static定位？
+            上滑箭头 position:absolute——所有页面复用
+        page2:基本信息
+            基本信息background图+h1->img/div>p 浮动->自我评价模块div>title+p*3-> 从上到下 块元素依次position:static定位？
+            
+        page3:技能详解
+            4个span技能球->img/div>p 浮动->技能详解模块div>title（bg? img?）+p-> 从上到下 块元素依次position:static定位？
+            
+        page4:工作经历
+            title-background图+h1-> ul/li*4- li-(img + div(h4+h4+p))
+        page5:兴趣爱好
+            title-background图+h1-> 两个div position:relative/ 藤条div + svg rect position:absolute?/ div轮播图+ div(title h3 + p)
+        page6:项目经验
+            title-background图+h1-> div/img->title-H2->p->(div/img)*2
+        page7:招聘意向
+
+    遇到的问题：
+        1.font-size没有调好，就去设置元素尺寸了，结果白设了，各种尺寸错位。。
+
+    二、CSS部分—
+        真是不想说啊。。。
+    
+    三、JS部分——
+
+    遇到的问题：
+        1.获取不到元素。。。——好像搞定了。。script标签需要放在页面底部...
+        2.第2页之后右上角 和 左下角的藤条 不能显示重新进入页面的动画
+
+        3.page3 无法实现三个叶子的x轴偏移不同
+
+
+    
+            
+*/
+</script>
