@@ -71,7 +71,7 @@ $music.tap(function () {
 })
 // 公共动效
 function commonMove() {
-    console.log('commonMove');
+    // console.log('commonMove');
     // 获取需要操作的元素
     let $rightT = $('.right_top_pic'),  // 右上角藤条
         $leftB = $('.left_bottom_pic'), // 左下角藤条
@@ -104,11 +104,11 @@ function commonMove() {
     $progressBar.css({
         width:(tip+1)*12.5+'%'
     });
-    console.log('tip:'+ tip);
+    // console.log('tip:'+ tip);
     
 }
 function commonMoveOut() {
-    console.log(111);
+    // console.log(111);
     // 获取需要操作的元素
     let $rightT = $('.right_top_pic'),
         $leftB = $('.left_bottom_pic');
@@ -166,7 +166,7 @@ function pageTwo() {
         $image = $('.image'),       // 照片
         $basicInfo = $('.basicInfo'),   // 基本信息
         $self_evaluation = $('.self_evaluation');   // 自我评价
-    console.log('page2');
+    // console.log('page2');
     timer = setTimeout(()=>{
         // 相框下拉
         $image_frame.css({
@@ -236,7 +236,7 @@ function pageFour() {
     let $imgs = $('li').find('img'),
         $experTitle = $('.time_location'),
         $experContent = $('.job_details').find('p');
-    console.log($imgs, $experTitle, $experContent);
+    // console.log($imgs, $experTitle, $experContent);
     let i = 0;
     timer2 = setInterval(()=>{
         if (i>2) {
@@ -271,7 +271,7 @@ function pageFive() {
         $descs = $frames.find('.desc'),  // 描述信息
         $hobbyTitles = $descs.find('.hobby_title'), // 描述信息开头
         $hobbyDetails = $descs.find('.hobby_detail');  // 描述信息详情
-        console.log($hobbyTitles, $hobbyDetails);
+        // console.log($hobbyTitles, $hobbyDetails);
     let i = 0, j=0;
     timer2 = setInterval(()=>{
         if (i>1) {
