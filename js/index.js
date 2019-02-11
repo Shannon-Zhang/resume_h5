@@ -16,7 +16,7 @@ function touchEnd(e) {
     this.endY = e.changedTouches[0].pageY; 
     if (this.endY - this.startY<0) {
         tip++;
-    } else if (this.endY - this.startY > 0) {}{
+    } else if (this.endY - this.startY > 0){
         tip--;
     } else{
         return;
