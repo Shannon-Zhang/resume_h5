@@ -2,7 +2,10 @@ let $section = $('section'),
     $sections = $('section'),
     tip = 0,
     timer = null,
-    timer2 = null;
+    timer2 = null,
+    timer3 = null,
+    timer4 = null,
+    timer5 = null;
 
 $section.on('touchstart', touchStart);
 $section.on('touchend', touchEnd);
@@ -71,33 +74,71 @@ $music.tap(function () {
 })
 // 公共动效
 function commonMove() {
+    clearTimeout(timer3);
+    clearTimeout(timer4);
+    clearTimeout(timer5);
     // console.log('commonMove');
     // 获取需要操作的元素
     let $rightT = $('.right_top_pic'),  // 右上角藤条
         $leftB = $('.left_bottom_pic'), // 左下角藤条
         $progressBar = $('.progressBar'),   // 页面底部进度条
-        $pTip = $('.page_tip');     // 页面底部页码
+        $pTip = $('.page_tip'),     // 页面底部页码
+        $flashCut = $('.flash_cut'),
+        $flashLis = $flashCut.find('li');
     let $title = $('.title'),
         $img = $title.find('img');
-    // 标题下拉
-    $title.css({
-        transform:'translateY(-0.2rem)'
+    let i = 0;
+    // timer5 = setTimeout(()=>{
+    //     $flashCut.css({
+    //         zIndex:'20',
+    //         display:'block'
+    //     });
+    // },100);
+    $flashCut.css({
+        zIndex:'20',
+        display:'block'
     });
-    // 标题框上的图片 抖动动画
-    $img.css({
-        animationIterationCount:'infinite'
-    })
-    $img.addClass('animated jello');
-    // 右上角藤条下移
-    $rightT.css({
-        // tansition:'all 1.5s',
-        transform:'translateY(0)'
-    });   
-    // 左下角藤条上移
-    $leftB.css({
-        // tansition:'all 1.5s',
-        transform:'translateY(0)'
-    });
+    timer4 = setInterval(()=>{
+        if (i>3) {
+            clearInterval(4);
+            $flashCut.css({
+                zIndex:'0',
+                display:'none'
+            });
+            $flashLis.removeClass('animated fadeOutRight');
+            $flashLis.removeClass('animated fadeOutLeft');
+            timer3 = setTimeout(()=>{
+                // 标题下拉
+                $title.css({
+                    transform:'translateY(-0.2rem)'
+                });
+                // 标题框上的图片 抖动动画
+                $img.css({
+                    animationIterationCount:'infinite'
+                })
+                $img.addClass('animated jello');
+                // 右上角藤条下移
+                $rightT.css({
+                    // tansition:'all 1.5s',
+                    transform:'translateY(0)'
+                });   
+                // 左下角藤条上移
+                $leftB.css({
+                    // tansition:'all 1.5s',
+                    transform:'translateY(0)'
+                });
+            },500);
+        }
+        $($flashLis[i]).addClass('animated fadeOutRight');
+        $($flashLis[7-i]).addClass('animated fadeOutLeft');
+        // $($flashLis[i]).css({
+        //     opacity:0,
+        // });
+        // $($flashLis[7-i]).css({
+        //     opacity:0,
+        // });
+        i++;
+    },200);    
     // 底部进度条增加
     // tip++;
     $pTip.html(tip+1+'/8');
